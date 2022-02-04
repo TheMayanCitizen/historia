@@ -1,0 +1,18 @@
+
+git init: Se usa para iniciar un repositorio de git en el directorio de trabajo actual.
+git add . : Agrega todos los cambios que se hayan hecho al area de stagging.
+git commit -m " ": Pasa los cambios del area de staggin al repositorio. Siempre va con un mensaje.
+git status : Analiza si ha habido cambios en el working directory.
+git log <nombre de archivo>: muestra todo el historial de cambios hechos al archivo, si no ponemos el nombre del archivo sale el historial de todos los archivos.
+git show: Muestra los ultimos cambios entre la version mas reciente y la anterior.
+git reflog: Muestra todo el historial de cambios hechos en el repositorio.
+git diff tag1 tag2: Muestra las diferencias entre los commits que seleccionamos, es recomendable poner el commit mas antiguo en el tag1 y el mas reciente en el tag2.
+git checkout <id del commit> <nombre del archivo>: sirve para analizar una version anterior del archivo, si hacemos un git status, nos mostrara que ha habido un cambio, si
+si hacemos el git commit, corremos el riesgo de perder nuestra ultima version, para resolver este asunto, debemos hacer un checkout del archivo master y despues
+hacer el commit.
+git commit --amend -m " ": Si nos equivocamos en el mensaje del archivo, con este comando lo podemos arreglar.
+git mv <nombre del archivo> <nuevo nombre del archivo>: Sirve para cambiar de nombre un archivo y que git registre el cambio.
+git rm <nombre del archivo>: Sirve para remover un archivo del disco duro, despues de remover hay que hacer un commit para guardar el cambio.
+git reset --soft <id del commit> : Regresa al punto que indicas pero no recupera el archivo si es que lo eliminaste, solo puedes ver las modificaciones que hayas hecho. Sirve mas para modificar el histórico de cambios sin alterar los archivos, p.j. si a partir de un punto en especifico quisieras cambiar los commits posteriores.(Un nuevo historial).
+git reset --hard <id del commit> : Regresa al punto que indicas y recupera el archivo en el working directory si es que lo eliminaste.
+git reset --mixed <id del commit> : Regresa al commit que indiquemos, borra los commits posteriores a ese pero guarda los cambios de los commits borrados. Cuando hacemos un cnuevo commit, se guardan los cambios de los commits borrados(pero no los commits) y los ultimos cambios realizados.
