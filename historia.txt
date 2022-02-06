@@ -1,5 +1,2 @@
-Esta es la historia de Alex, 
-
-nacio en Mexico
-
-y ahora estudia programacion con Git.
+Esta es la historia de Alex,
+este parrafo es para el segundo commit :)
