@@ -1,2 +1,4 @@
 Esta es la historia de Alex, este cambio es para la rama master y para hacer el merge con cabecera
 este parrafo es para el segundo commit :)
+
+Este cambio lo he hecho desde Github.
